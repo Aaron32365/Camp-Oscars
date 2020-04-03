@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camp Oscars!</title>
-    <script src="node_modules/confetti-js/dist/index.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
 </head>
 <body>
         <div class="row">
@@ -21,16 +20,19 @@
                 <hr style="font-weight: 2em; width: 120px;">
             </div>
             <div class="col-sm-4">
-                <canvas id="my-canvas"></canvas>
+                <canvas id="my-canvas">
             </div>
-            <div class="col-sm-4 card" style="width: 18rem; margin-top: 80px; height: 320px; border-radius: 12px;">
+            <div class="col-sm-4 card" style="width: 18rem; margin-top: 80px; height: 320px; border-radius: 12px;" id="emitter">
                 <div class="card-body">
-                <h5 class="card-title" id="task" style="text-align: center; font-family: 'Questrial', sans-serif; font-weight: bold;">Sewing</h5>
-                <p class="card-text" id="name" style="text-align: center; padding-top: 20px; font-family: 'Questrial', sans-serif;">I wonder who it'll be...</p>
-                <a href="#" class="btn btn-primary" id="revealBtn" style="margin-left: 44%; margin-top: 20px;" onclick="confettii()">Reveal</a>
+                    <div class="col-sm-12" id="body">
+                        <h5 class="card-title task" style="text-align: center; font-family: 'Questrial', sans-serif; font-weight: bold; font-size: 2em;" id="job">Wood working</h5>
+                        <p class="card-text names" style="text-align: center; padding-top: 20px; font-family: 'Marck Script', cursive; font-size: 2em;">I wonder who it'll be...</p>
+                    </div>
+                <a href="#" class="btn btn-primary rBtn"  style="margin-left: 44%; margin-top: 20px;" onclick="confetti.start(3200), func()">Reveal</a>
                 </div>
             </div>
-        </div>
+            <div class="col-sm-4">
     <script src="./index.js"></script>
+    <script src="./confetti.js"></script>
 </body>
 </html>

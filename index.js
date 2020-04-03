@@ -1,30 +1,22 @@
-var confettiSettings = { target: 'my-canvas' };
-var confetti = new ConfettiGenerator(confettiSettings);
+let i = 0;
+var namelist = ["Sunshine", "Bozzy Bee", "Dory", "Yoshi", "Bumblebee & Gemini", "Tulip and White Tiger", "Pheonix", "Olive", "Tuna"]
+var joblist = ["Wood working", "Ceramics B", "Ceramics C/D", "Sewing", "STEAM", "Nature", "Sampler", "Drawing and Painting", "Clothing and Accessories"]
+var job = $("#job")
+var names = $(".names")
 
-
-
-
-async function confettii(){
-    event.preventDefault()
-    changeText("Drawing and Painting","Alyssa Macias","Next!")
-    confetti.render();
-     setTimeout(() => {
-        confetti.clear()
-        changeText("Clothing and Accessories","Caramel","Next!")
-    }, 5000); 
+function func(){
+    console.log("Success 1")
+    job.text(joblist[i])
+    names.text(namelist[i])
+    i++
     setTimeout(() => {
-    }, 10000);
+    next()
+    }, 3600);
 }
 
-function changeText(header, name, button){
-    $("#task").text(header)
-    $("#name").text(name)
-    $("#revealBtn").text(button)
-}
+function next(){
+    console.log("Success 2")
+    job.text(joblist[i])
+    names.text("")
 
-function start(){
-    var job = $("#task").text()
-    var person = $("#name").text()
-    var joblist = []
-    var people = []
-}//create a reveal button next to the next button, use the next button to switch to the next joblist item 
+}
