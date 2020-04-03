@@ -11,7 +11,7 @@ function func(){
     i++
     setTimeout(() => {
     next()
-    }, 3600);
+    }, 5800);
 }
 
 function next(){
