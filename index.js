@@ -1,5 +1,5 @@
 let i = 0;
-var namelist = ["Sunshine", "Bozzy Bee", "Dory", "Yoshi", "Bumblebee & Gemini", "Tulip and White Tiger", "Pheonix", "Olive", "Tuna"]
+var namelist = ["Sunshine", "Bozzy Bee", "Dory", "Yoshi", "Bumblebee & Gemini", "Tulip and White Tiger", "Phoenix", "Olive", "Tuna"]
 var joblist = ["Wood working", "Ceramics B", "Ceramics C/D", "Sewing", "STEAM", "Nature", "Sampler", "Drawing and Painting", "Clothing and Accessories"]
 var job = $("#job")
 var names = $(".names")
